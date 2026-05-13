@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sudha Dental Care</title>
+    <script>
+      // GitHub Pages SPA fallback: stash the requested path and bounce to /
+      (function () {
+        var segmentCount = 1; // repo name segment ("/sudhadentalcare")
+        var l = window.location;
+        var pathSegments = l.pathname.split("/").slice(0, 1 + segmentCount).join("/");
+        sessionStorage.setItem("spa-redirect", l.pathname + l.search + l.hash);
+        l.replace(l.protocol + "//" + l.host + pathSegments + "/");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
