@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Toaster } from "sonner";
 import { Nav } from "@/components/site/Nav";
 import { Hero } from "@/components/site/Hero";
@@ -6,11 +5,7 @@ import { About, Services, AISmile, Doctors, Stories } from "@/components/site/Se
 import { Booking, Footer, ChatOrb } from "@/components/site/Booking";
 import { SmileCursor } from "@/components/site/SmileCursor";
 
-export const Route = createFileRoute("/")({
-  component: Index,
-});
-
-function Index() {
+export default function App() {
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <SmileCursor />
